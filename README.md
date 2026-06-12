@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mona Abishek A — Portfolio
 
-## Getting Started
+A single-scroll personal site that moves from warm cream *day* into ink *night*
+as you read. Built to feel like a specific person, not a résumé.
 
-First, run the development server:
+Stack: **Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 ·
+Motion**. Type set in **Fraunces** (display) and **Geist** / **Geist Mono**.
+
+## Run it
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
+npm run build    # production build
+npm run start    # serve the production build
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Editing content — one file
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Everything visible on the site is driven by `src/data/content.json`.**
+Change the JSON, save, and the whole page updates — no component edits needed.
+The shape is fully typed in `src/types/content.ts`, so your editor will flag a
+wrong key or missing field.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A few notes:
 
-## Learn More
+- **Projects** — set `"hero": true` for the lead project (larger treatment). Add
+  a `links.live` / `links.repo` URL and it renders a link; leave it `""` and it
+  shows `Private`. An empty `stack: []` hides the tech chips.
+- **Socials** (contact) — any entry with an empty `url` is skipped. LinkedIn is
+  left blank; drop your URL in to light it up.
+- **Now** — the "living" section. Edit the `items` and the `updated` date.
+- **Easter egg** copy lives under `easterEgg` (The Pledge / The Turn / The Prestige).
 
-To learn more about Next.js, take a look at the following resources:
+## The hidden details
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The whole point of the site is rewarding people who look closely. What's hidden:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**The Prestige sequence** (a Pledge / Turn / Prestige reveal) opens via any of:
+- The pulsing **full stop** after *"the same answer."* (hero) or *"I came back to."* (closing).
+- The **Konami code**: `up up down down left right left right b a`.
+- Typing **`prestige`** or **`watch`** anywhere.
+- A styled note in the **browser console**.
 
-## Deploy on Vercel
+**Keyword whispers** — type a word Mona cares about and a small line surfaces,
+then fades. Editable in `content.json → whispers.keywords`. Defaults include
+`911`, `porsche`, `f1`, `nolan`, `interstellar`, `guitar`, `football`, `anthropic`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Quieter touches**
+- The whole-page **day→night** scroll (rewards finishing the page).
+- Leave the tab and the **title invites you back** — a nod to "I came back to."
+  (editable: `content.json → tabTitle.away`).
+- The **live Chennai clock** in the hero.
+- The **custom cursor** grows and whispers "look closer" over hidden elements.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## How it's built
+
+- `src/components/DayNight.tsx` — writes live `--bg` / `--fg` CSS variables onto
+  the document root from scroll progress; the cream->ink arc and text colors flip
+  in lockstep so contrast is always preserved. The clay accent stays constant.
+- `src/components/Reveal.tsx` — controlled, docking-smooth scroll reveals that
+  fall back to plain visible content under `prefers-reduced-motion`.
+- `src/components/WatchingClosely.tsx` — the Pledge/Turn/Prestige easter egg.
+- `src/components/Whispers.tsx` — keyword whispers + the "came back" tab title.
+- `src/components/Cursor.tsx` — the custom difference-blend cursor (fine pointers only).
+- Each section is a small component reading from `content.json`.
+
+Static-rendered, mobile-first, and dependency-light by design.

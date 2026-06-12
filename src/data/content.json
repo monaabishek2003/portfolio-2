@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "name": "Mona Abishek A",
+    "shortName": "Mona Abishek",
+    "role": "Software Developer",
+    "location": "Chennai, India",
+    "title": "Mona Abishek A — Software Developer",
+    "description": "Self-taught software developer in Chennai. I care most about the details you're not supposed to notice — where how a thing works and how it feels arrive at the same answer."
+  },
+  "hero": {
+    "kicker": "Chennai, India — Software Developer",
+    "headline": ["Form and function,", "the same answer."],
+    "intro": "I'm Mona Abishek. I taught myself to build software, and I care most about the details you're not supposed to notice.",
+    "scrollHint": "Scroll. It gets darker.",
+    "konamiHint": "↑ ↑ ↓ ↓ ← → ← → B A"
+  },
+  "closing": {
+    "lines": ["Everything I love,", "I came back to."]
+  },
+  "story": {
+    "label": "01 — The long way round",
+    "heading": "I have a habit of arriving at things late, and on my own.",
+    "paragraphs": [
+      "In the fourth grade I wanted a guitar I couldn't afford. I bought one in college and taught myself to play from YouTube, one clumsy chord at a time. I still can't read sheet music. I can play almost anything I love.",
+      "In the eighth grade a coach left me off the football team. I didn't play again for years. I started again last year — twice a month, badly, completely happy. I watch the game now the way I watch everything: for the tactics underneath, the part most people don't look at.",
+      "I started university in electrical engineering. By the second year I knew it wasn't mine, so I taught myself to code — Udemy, YouTube, strangers on the internet — and walked into the job anyway. Nobody handed me this. I prefer it that way.",
+      "I'm drawn to the 911 that doesn't look like much and quietly outruns everything around it. That's the kind of work I'm trying to make."
+    ]
+  },
+  "principles": {
+    "label": "02 — How I work",
+    "heading": "A few things I don't compromise on.",
+    "items": [
+      {
+        "n": "i",
+        "title": "Form and function are one decision.",
+        "body": "If how it works and how it feels disagree, I'm not finished yet."
+      },
+      {
+        "n": "ii",
+        "title": "No shortcuts I'd be ashamed of.",
+        "body": "Nolan builds the spinning hallway for real. I'd rather do the honest, harder version too."
+      },
+      {
+        "n": "iii",
+        "title": "The details are the whole thing.",
+        "body": "Good work rewards a closer look. Most people won't take it. The right ones will."
+      },
+      {
+        "n": "iv",
+        "title": "Learn it by doing it.",
+        "body": "I don't wait for a syllabus or permission. I find the edge of what I know and push past it."
+      }
+    ]
+  },
+  "work": {
+    "label": "03 — Work",
+    "heading": "Where I do this for a living.",
+    "roles": [
+      {
+        "company": "AstraZeneca",
+        "companyNote": "Global top-3 pharmaceutical company",
+        "role": "Associate Engineer",
+        "period": "Jul 2024 — Present",
+        "summary": "Full-stack work on internal scientific platforms — the systems researchers use to make sense of compound data.",
+        "stack": ["React", "Node", "Express", "GraphQL", "Python", "Celery", "PostgreSQL", "Elasticsearch"],
+        "highlights": [
+          "Expanded CAG-Explorer's federated GraphQL layer by onboarding 8 new data sources (APIs + Elasticsearch), authoring schemas end to end and building cross-linked views that gave scientists a single, deeply contextual window into compound data.",
+          "Cut CAG-Explorer's load time by 30% by tracing query bottlenecks and restructuring dependent GraphQL calls into independent parallel queries — no more cascading waits.",
+          "Single-handedly migrated the entire CI/CD pipeline from Jenkins to GitHub Actions (frontend + backend), configured horizontal pod autoscaling, and wired in SonarQube and Sentry for automated quality gating and real-time error monitoring.",
+          "Owned a vendor SaaS integration end to end — designed the DB schemas, consumed SQS events, transformed payloads, and dispatched fire-and-forget events downstream, with zero disruption to existing flows.",
+          "Co-led a full POC/MVP of a new in-house platform built with agentic coding, and secured executive approval for full-scale development."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "label": "04 — Projects",
+    "heading": "Things I've made.",
+    "items": [
+      {
+        "name": "Orchestrator",
+        "hero": true,
+        "year": "2025 —",
+        "status": "Currently building",
+        "tagline": "A control layer for the age of AI agents.",
+        "description": "As software development shifts from writing code to directing AI agents, Orchestrator is the visibility, intervention, and control layer that keeps agent-driven workflows on track. It's the first thing I've built that actually feels like me — and it's the way I built this site, too.",
+        "stack": [],
+        "links": { "live": "", "repo": "" }
+      },
+      {
+        "name": "Melthify",
+        "hero": false,
+        "year": "Mar 2023",
+        "status": "",
+        "tagline": "Mental-health support, made gentle.",
+        "description": "A mental-health assistance platform: a calm React interface, an OpenAI-powered chatbot for private virtual support, and a small community layer on top of Firebase. An early one — built to help, and to learn.",
+        "stack": ["React", "Node", "OpenAI API", "Firebase"],
+        "links": { "live": "", "repo": "" }
+      },
+      {
+        "name": "xshare-SSN",
+        "hero": false,
+        "year": "Jun 2023",
+        "status": "",
+        "tagline": "A campus-only place to share moments.",
+        "description": "A social platform exclusive to SSN students. A scalable Node/Express/MongoDB backend, AWS S3 for media, Redux-managed React on the front, JWT and bcrypt holding the door. Built before placements to prove I could ship something real.",
+        "stack": ["React", "Redux", "Node", "Express", "MongoDB", "AWS S3"],
+        "links": { "live": "", "repo": "" }
+      }
+    ]
+  },
+  "offTheClock": {
+    "label": "05 — Off the clock",
+    "heading": "What I notice when no one's paying me to.",
+    "items": [
+      {
+        "tag": "Cars & F1",
+        "body": "I love cars the way some people love buildings — for the engineering you can feel. Formula 1 most of all: the precision, the impossible detail, drivers working at the edge of what's survivable."
+      },
+      {
+        "tag": "Guitar",
+        "body": "An acoustic, self-taught, other people's songs. No audience. Just me, working out something I love until my fingers remember it without being asked."
+      },
+      {
+        "tag": "Cinema",
+        "body": "Interstellar's docking scene. The moment the twin walks out in The Prestige. I love stories that fold back on themselves and reward a second watch. I'm trying to build the same way."
+      },
+      {
+        "tag": "Football",
+        "body": "Cut from the team at thirteen; back on the pitch a decade later. Twice a month, for the love of a tough, risky, beautiful game and the tactics humming underneath it."
+      }
+    ]
+  },
+  "now": {
+    "label": "06 — Now",
+    "heading": "What I'm on right now.",
+    "updated": "Updated June 2026",
+    "items": [
+      { "k": "Building", "v": "Orchestrator — a control layer for AI-agent workflows." },
+      { "k": "Learning", "v": "Going deeper on agentic systems and the tooling around them." },
+      { "k": "Playing", "v": "A fingerstyle arrangement I'm not quite good enough for yet." },
+      { "k": "Watching", "v": "F1 race weekends, and far too much football." },
+      { "k": "Wanting", "v": "A team that sweats the details as much as I do." }
+    ]
+  },
+  "contact": {
+    "label": "07 — Contact",
+    "heading": "If any of this stayed with you.",
+    "blurb": "I'm looking for a team that builds things worth looking closely at. If that sounds like yours, I'd like to talk.",
+    "email": "monaabisheka@gmail.com",
+    "socials": [
+      { "label": "GitHub", "url": "https://github.com/monaabishek2003" },
+      { "label": "LinkedIn", "url": "" }
+    ]
+  },
+  "colophon": {
+    "lines": [
+      "This site wasn't typed so much as directed — built the way I build now: orchestrating, reviewing, and refusing to settle until the details were right. Every word here is mine.",
+      "Next.js · Fraunces & Geist · Chennai, 2026."
+    ]
+  },
+  "easterEgg": {
+    "pledge": "The Pledge",
+    "pledgeText": "Everything here looks ordinary. A name, some work, a few things I love.",
+    "turn": "The Turn",
+    "turnText": "But you looked closer than most people do. That was the whole point.",
+    "prestige": "The Prestige",
+    "prestigeText": "Are you watching closely?",
+    "footnote": "— now you've seen it"
+  },
+  "whispers": {
+    "hint": "Type something I'd care about.",
+    "keywords": [
+      { "word": "911", "text": "engineering you can feel." },
+      { "word": "porsche", "text": "the one that doesn't look like much." },
+      { "word": "f1", "text": "lights out." },
+      { "word": "nolan", "text": "are you watching closely?" },
+      { "word": "interstellar", "text": "no — it's necessary." },
+      { "word": "guitar", "text": "still self-taught. ♪" },
+      { "word": "football", "text": "back on the pitch. ⚽" },
+      { "word": "anthropic", "text": "form, function, safety — one answer." }
+    ]
+  },
+  "tabTitle": {
+    "away": "Come back to it. —"
+  }
+}
