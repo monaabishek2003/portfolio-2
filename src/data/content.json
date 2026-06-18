@@ -60,16 +60,17 @@
       {
         "company": "AstraZeneca",
         "companyNote": "Global top-3 pharmaceutical company",
-        "role": "Associate Engineer",
-        "period": "Jul 2024 — Present",
-        "summary": "Full-stack work on internal scientific platforms — the systems researchers use to make sense of compound data.",
-        "stack": ["React", "Node", "Express", "GraphQL", "Python", "Celery", "PostgreSQL", "Elasticsearch"],
+        "role": "Software Development Engineer",
+        "roleNote": "Intern → Full-time",
+        "period": "Feb 2024 — Present",
+        "summary": "Full-stack work on internal scientific platforms — the systems researchers use to make sense of compound data, serving 2,000+ users and handling ~9K queries/day.",
+        "stack": ["React", "Node", "Express", "GraphQL", "Python", "Celery", "PostgreSQL", "Elasticsearch", "Redis", "AWS SQS", "Docker", "Kubernetes"],
         "highlights": [
-          "Expanded CAG-Explorer's federated GraphQL layer by onboarding 8 new data sources (APIs + Elasticsearch), authoring schemas end to end and building cross-linked views that gave scientists a single, deeply contextual window into compound data.",
-          "Cut CAG-Explorer's load time by 30% by tracing query bottlenecks and restructuring dependent GraphQL calls into independent parallel queries — no more cascading waits.",
-          "Single-handedly migrated the entire CI/CD pipeline from Jenkins to GitHub Actions (frontend + backend), configured horizontal pod autoscaling, and wired in SonarQube and Sentry for automated quality gating and real-time error monitoring.",
-          "Owned a vendor SaaS integration end to end — designed the DB schemas, consumed SQS events, transformed payloads, and dispatched fire-and-forget events downstream, with zero disruption to existing flows.",
-          "Co-led a full POC/MVP of a new in-house platform built with agentic coding, and secured executive approval for full-scale development."
+          "Designed and integrated GraphQL schemas for 8 heterogeneous data sources (REST APIs, Elasticsearch), building complete backend data layers with concurrency-controlled API fetching, Redis caching, and graceful fallbacks for deprecated upstream services.",
+          "Built 3 data-rich feature modules from scratch with search views, detail pages, interactive data grids, cross-linked navigation, and intelligent search suggestions; cut page load time by 25% by splitting monolithic GraphQL queries and deferring heavy fragments.",
+          "Led the end-to-end migration of CI/CD pipelines (frontend + backend) from Jenkins to GitHub Actions; configured Kubernetes HPA to auto-scale pods on CPU/memory thresholds; added SonarQube and Sentry for quality gating and runtime monitoring.",
+          "Built a bi-directional vendor integration (Python, Celery, AWS SQS) handling 4 entity types — outbound event payloads and inbound REST callback handlers with status-lifecycle mapping, interaction logging, and retry logic, enabling capabilities the legacy desktop application could not support.",
+          "Built a full-stack POC in ~50 hours to replace a paid vendor SaaS product using AI-powered agentic workflows (React, Node.js, PostgreSQL); pitched to senior leadership and secured executive approval for production build, now in active development."
         ]
       }
     ]
@@ -84,9 +85,9 @@
         "year": "2025 —",
         "status": "Currently building",
         "tagline": "A control layer for the age of AI agents.",
-        "description": "As software development shifts from writing code to directing AI agents, Orchestrator is the visibility, intervention, and control layer that keeps agent-driven workflows on track. It's the first thing I've built that actually feels like me — and it's the way I built this site, too.",
-        "stack": [],
-        "links": { "live": "", "repo": "" }
+        "description": "An open-source orchestration tool for AI coding agents — zero SDK or instrumentation required. Streams a real-time Kanban dashboard showing every execution step, tool call, and token count. Includes token-budget enforcement that auto-pauses agents mid-execution on limit breach, and a background watchdog for stuck sessions. Published on npm: a single npx command boots the full stack.",
+        "stack": ["Next.js", "Node", "Express", "SQLite", "Prisma", "Socket.io"],
+        "links": { "live": "", "repo": "https://github.com/monaabishek2003/orchestrator" }
       },
       {
         "name": "Melthify",
@@ -94,9 +95,9 @@
         "year": "Mar 2023",
         "status": "",
         "tagline": "Mental-health support, made gentle.",
-        "description": "A mental-health assistance platform: a calm React interface, an OpenAI-powered chatbot for private virtual support, and a small community layer on top of Firebase. An early one — built to help, and to learn.",
+        "description": "An AI-powered mental-health platform with an OpenAI API chatbot for private, real-time conversational support and an anonymous community layer, deployed on Firebase. An early one — built to help, and to learn.",
         "stack": ["React", "Node", "OpenAI API", "Firebase"],
-        "links": { "live": "", "repo": "" }
+        "links": { "live": "", "repo": "https://github.com/monaabishek2003/Melthify" }
       },
       {
         "name": "xshare-SSN",
@@ -151,7 +152,7 @@
     "email": "monaabisheka@gmail.com",
     "socials": [
       { "label": "GitHub", "url": "https://github.com/monaabishek2003" },
-      { "label": "LinkedIn", "url": "" }
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/monaabisheka" }
     ]
   },
   "colophon": {

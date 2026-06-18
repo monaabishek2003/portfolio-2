@@ -41,6 +41,7 @@ export interface Role {
   company: string;
   companyNote: string;
   role: string;
+  roleNote?: string;
   period: string;
   summary: string;
   stack: string[];
