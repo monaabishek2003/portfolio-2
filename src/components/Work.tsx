@@ -21,7 +21,12 @@ export default function Work() {
                   </p>
                 </div>
                 <div className="shrink-0 sm:text-right">
-                  <p className="text-base text-fg">{role.role}</p>
+                  <p className="text-base text-fg">
+                    {role.role}
+                    {role.roleNote && (
+                      <span className="ml-2 text-sm text-muted">({role.roleNote})</span>
+                    )}
+                  </p>
                   <p className="font-mono text-xs tracking-widest text-muted">
                     {role.period}
                   </p>
